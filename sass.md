@@ -57,7 +57,24 @@ We follow basic [BEM](https://en.bem.info/methodology/naming-convention/) naming
 .block-element_modifier {
 }
 ```
- 
+You can use Sass' nested properties to make these classes more organized.
+```
+.block {
+  &-element {
+    &_modifier {
+    }
+  }
+}
+```
+Which would print out as:
+```
+.block-element_modifier {
+}
+```
+
+### Nesting
+Nesting is cool, but don't go more than 3 levels deep.
+
 ### Declaration Sorting
 To keep styles consistent, we follow the [Concentric CSS](https://github.com/brandon-rhodes/Concentric-CSS/blob/master/style.css) model of type ordering. Essentially, Concentric CSS follows the box-model to define order. Start outside and work inward. Refer to Concentric CSS for specific order, but these are the general guidelines:
 
@@ -72,6 +89,7 @@ To keep styles consistent, we follow the [Concentric CSS](https://github.com/bra
 9. Text styles (text-align, text-transform, etc.)
 10. Text Formatting (line-height, letter-spacing, etc.)
 11. Font styles (color, font-size, etc.)
+
 
 ## Commenting
 A well-commented codebase makes collaboration easy as pie. Follow this basic commenting rules
