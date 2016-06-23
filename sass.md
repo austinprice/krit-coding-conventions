@@ -20,7 +20,7 @@ A clean and organized folder structure is key. To keep our Sass folder structure
   - Sets any page-specific styles that will be used only on a given page or section of the app.
   - File names should directly correspond to a template name.
   - Keep styles here to a minimum. Try to make styles modular and repeatable across instances first.
-- /abstracts
+- /config
   - Sets global tools and helpers used across the app.
   - Includes variables, settings, mixins, and functions.
   - Avoid concrete element, class and ID selectors. This should only contain abstract tools that utilize the power of Sass.
